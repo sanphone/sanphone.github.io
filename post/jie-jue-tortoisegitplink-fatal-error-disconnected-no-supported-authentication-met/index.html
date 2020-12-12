@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Sanphone&#39;s Blog</title>
+<title>解决: TortoiseGitPlink Fatal Error - Disconnected No supported authentication met | Sanphone&#39;s Blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,14 +12,24 @@
 <link rel="stylesheet" href="https://sanphone.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="温故而知新">
-    
+    <meta name="description" content="重新设置一下ssh.exe
+
+如果遇到点击确认无反应？勾上下面的选项再试试？
+
+..." />
+    <meta name="keywords" content="git" />
   </head>
   <body>
     <div id="app" class="main">
@@ -101,72 +111,46 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://sanphone.github.io/post/jie-jue-tortoisegitplink-fatal-error-disconnected-no-supported-authentication-met/">
-                  <h2 class="post-title">解决: TortoiseGitPlink Fatal Error - Disconnected No supported authentication met</h2>
-                </a>
-                <div class="post-date">
-                  2020-12-12
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://sanphone.github.io/post/git-ssl-certificate-problem-unable-to-get-local-issuer-certificate/">
-                  <h2 class="post-title">git: SSL certificate problem unable to get local issuer certificate</h2>
-                </a>
-                <div class="post-date">
-                  2020-12-12
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://sanphone.github.io/post/win10-hexogitee-da-jian-bo-ke/">
-                  <h2 class="post-title">win10 hexo+gitee搭建博客</h2>
-                </a>
-                <div class="post-date">
-                  2020-12-12
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://sanphone.github.io/post/about/">
-                  <h2 class="post-title">关于</h2>
-                </a>
-                <div class="post-date">
-                  2019-01-25
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">解决: TortoiseGitPlink Fatal Error - Disconnected No supported authentication met</h2>
+            <div class="post-date">2020-12-12</div>
+            
+            <div class="post-content" v-pre>
+              <p>重新设置一下ssh.exe<br>
+<img src="https://sanphone.github.io/post-images/1607775864597.png" alt="" loading="lazy"><br>
+如果遇到点击确认无反应？勾上下面的选项再试试？<br>
+<img src="https://sanphone.github.io/post-images/1607775868944.png" alt="" loading="lazy"></p>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://sanphone.github.io/tag/sFGjpMjwY/" class="tag">
+                    git
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://sanphone.github.io/post/git-ssl-certificate-problem-unable-to-get-local-issuer-certificate/">
+                  <h3 class="post-title">
+                    git: SSL certificate problem unable to get local issuer certificate
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -187,6 +171,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dcd55b74933abf79fed4',
+        clientSecret: 'ca61bdcbe7023c4bc748317aaec3bf307110e9ce',
+        repo: 'sanphone.github.io',
+        owner: 'sanphone',
+        admin: ['sanphone'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
