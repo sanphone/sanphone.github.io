@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sanphone.github.io</id>
     <title>Sanphone&apos;s Blog</title>
-    <updated>2020-12-12T12:49:05.420Z</updated>
+    <updated>2020-12-12T12:54:25.583Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sanphone.github.io"/>
     <link rel="self" href="https://sanphone.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://sanphone.github.io/images/avatar.png</logo>
     <icon>https://sanphone.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Sanphone&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[git]]></title>
+        <id>https://sanphone.github.io/post/git/</id>
+        <link href="https://sanphone.github.io/post/git/">
+        </link>
+        <updated>2020-12-12T12:52:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>git</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>git</p>
+<!-- more -->
+<p>bash</p>
+<!-- more -->
+<p>helloworld</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[解决: TortoiseGitPlink Fatal Error - Disconnected No supported authentication met]]></title>
         <id>https://sanphone.github.io/post/jie-jue-tortoisegitplink-fatal-error-disconnected-no-supported-authentication-met/</id>
