@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | Sanphone&#39;s Blog</title>
+<title>git: SSL certificate problem unable to get local issuer certificate | Sanphone&#39;s Blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,13 +12,22 @@
 <link rel="stylesheet" href="https://sanphone.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="原因
+pycharm用git获取项目的时候提示git SSL certificate problem: unable to get local issuer certificate
+这个问题是由于没有配置信任的服务器HTTPS验证。默认，c..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -100,10 +109,41 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">git: SSL certificate problem unable to get local issuer certificate</h2>
+            <div class="post-date">2020-12-12</div>
             
+            <div class="post-content" v-pre>
+              <h2 id="原因">原因</h2>
+<p>pycharm用git获取项目的时候提示git SSL certificate problem: unable to get local issuer certificate</p>
+<p>这个问题是由于没有配置信任的服务器HTTPS验证。默认，cURL被设为不信任任何CAs，就是说，它不信任任何服务器验证。</p>
+<h2 id="解决办法">解决办法：</h2>
+<pre><code>git config --global http.sslVerify false
+</code></pre>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://sanphone.github.io/post/win10-hexogitee-da-jian-bo-ke/">
+                  <h3 class="post-title">
+                    win10 hexo+gitee搭建博客
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
+
         </div>
       </div>
     </div>
@@ -123,6 +163,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dcd55b74933abf79fed4',
+        clientSecret: 'ca61bdcbe7023c4bc748317aaec3bf307110e9ce',
+        repo: 'sanphone.github.io',
+        owner: 'sanphone',
+        admin: ['sanphone'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
